@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox properties</title>
+    <style>
+        .box{
+            height: 100px; width: 100px;
+            background-color: yellowgreen;
+            border: 2px solid black;
+            display: flex;
+        }
+        h1{
+            margin: 250px;
+        }
+        #container{
+            height: 200px;
+            width:600px;
+            border:2px solid red;
+            display: flex;
+            flex-direction: row-reverse; /*this reverse direction of flex items*/
+            align-items: center;    /*align flex items along the cross axis*/
+            justify-content: space-between;/*aligns flex items along main axis*/
+            flex-wrap: wrap-reverse; /*Determines how items apppear in container*/
+            align-content: center;/*used to adjust spacing bw flex lines*/
+        }
+        #Box1{
+            flex-shrink: 2;/*shrink item twice of other items*/
+            order:2;
+        }
+        #Box3{
+            flex-grow: 3;/*grows item thrice of other items*/
+            order:1;/*also sets order in which items appear*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Container</h1>
+    <div id="container">
+    <div id="Box1" class="box">Box1</div>
+    <div id="Box2" class="box">Box2</div>
+    <div id="Box3" class="box">Box3</div>
+    </div>
+</body>
+</html>

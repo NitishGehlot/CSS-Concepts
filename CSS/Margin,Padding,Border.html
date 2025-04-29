@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Margin & Padding</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #Button{
+            padding: 5px 10px 15px 20px; /*padding defines space bw content and border*/
+            background-color: firebrick;
+            margin: 5px 10px 15px 20px; /*margin sets space around elements and seprates from others*/
+            border: 2px solid black; /*Border is the Lining around the element, can also specify type and color*/
+            border-radius: 30px; /*Border radius is the curve around corners of border*/
+        }
+        #button2{
+            box-sizing: border-box;
+            box-sizing: content-box; /*can also specify box type using box sizing*/ 
+        }
+    </style>
+</head>
+<body>
+    <div id="Button">Click Me!</div>
+    <div id="button2">Poke me!</div>
+</body>
+</html>

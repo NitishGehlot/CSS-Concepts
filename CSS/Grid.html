@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid</title>
+    <style>
+        .container{
+            display:grid; /*grid is also like flexbox but it is 2D*/
+            grid-template-columns: 50px 50px; /*can adjust position in both axis*/
+            grid-template-rows: 50px 50px;
+        }
+        #Box1{
+            grid-column: 1/2;
+            grid-row: 1/2; /*This defines row and column Position in a grid*/
+            background-color: orange;
+        }
+        #Box2{
+            grid-column: 2/2;
+            grid-row: 1/2;
+            background-color:khaki;
+        }
+        #Box3{
+            grid-column: 1/2;
+            grid-row: 2/2;
+            background-color:red;
+        }
+        #Box4{
+            grid-column: 2/2;
+            grid-row: 2/2;
+            background-color:cadetblue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="Box1" class="box">Box1</div>
+        <div id="Box2" class="box">Box2</div>
+        <div id="Box3" class="box">Box3</div>
+        <div id="Box4" class="box">Box4</div>
+        </div>
+</body>
+</html>

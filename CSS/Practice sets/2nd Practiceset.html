@@ -1,0 +1,32 @@
+<!--• Create a div bar with text and background color with opacity, Change the color of the main content,Add background image to one div Use background shorthand property-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice set 2</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #bar{
+          /*  background-color:antiquewhite;
+            color: rgb(0, 0, 255, 0.5);
+            background-image: url(images/sample.png);
+            height: 100px;
+            width: 150px;
+            background-repeat: no-repeat;
+            background-position: center;*/     /*this can also be written as this using shorthand property*/
+            background: antiquewhite url(images/sample.png) no-repeat center;
+        }
+        main{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div id="bar">Text</div>
+    </header>
+    <main>This is main content.</main>
+</body>
+</html>

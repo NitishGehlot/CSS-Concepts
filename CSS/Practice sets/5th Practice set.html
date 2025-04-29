@@ -1,0 +1,63 @@
+<!--- Create a webpage with header, footer, and a content area.
+- Header- Create a nav bar with links.
+- Main- Create a div with width and height,Background green and border radius 50%.Create Three divs with container height and width 100px. Display inline block.Set the correct position property for the single div element to ensure it remains at the right side of the page and does not shift when scrolling.Use z-index to place the div on top of another div.
+- Footer- Add text in footer.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice set 5</title>
+    <style>
+        .Common{
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            background-color: blue;
+            
+        }
+        #box1{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border-radius: 50px;
+            text-align: center;
+        }
+        #div1{
+        position: fixed;
+        right: 200px;
+        }
+        #div2{
+            z-index: 1;
+            top: 20px;
+            left: 200px;
+            position: relative;
+            background-color: pink;
+        }
+        #div3{
+            z-index: 2;
+            top: 20px;
+            left: 150px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+            <a href="#">Link5</a>
+        </nav>
+    </header>
+    <main>
+        <div id="box1">Click</div>
+        <div id="div1" class="Common">This is div1</div>
+        <div id="div2" class="Common">This is div2</div>
+        <div id="div3" class="Common">This is div3</div>
+    </main>
+    <footer>
+        This is footer
+    </footer>
+</body>
+</html>

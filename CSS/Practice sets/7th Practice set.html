@@ -1,0 +1,63 @@
+<!--Create a webpage with a progress bar that showcases a smooth loading animation. The progress bar should fill up from 0 to 100% with a smooth
+transition effect and a slight bounce when it reaches 100%.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Progress Bar with Bounce</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .progress-container {
+      width: 80%;
+      max-width: 600px;
+      height: 30px;
+      background-color: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      width: 0%;
+      animation: fillBar 4s ease-in-out infinite forwards;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    @keyframes fillBar {
+      0% {
+        width: 0%;
+      }
+      90% {
+        width: 100%;
+        transform: scaleX(1);
+      }
+      95% {
+        transform: scaleX(1.05); /* bounce out */
+      }
+      100% {
+        transform: scaleX(1); /* settle */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress-container">
+    <div class="progress-bar">100%</div>
+  </div>
+</body>
+</html>
